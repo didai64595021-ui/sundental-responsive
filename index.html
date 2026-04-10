@@ -6,13 +6,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="최선의 진료를 위해 노력하는 선치과 병원입니다.">
 <meta name="keywords" content="선치과병원, 선치과, 대전치과, 임플란트, 양악, 치아교정, 라미네이트, 충치, 치주, 턱관절, 틀니, 스케일링, 스켈링, 소아치과, 어린이치과, 사랑니">
-<link rel="canonical" href="http://www.sundentalhospital.com/">
+<link rel="canonical" href="https://www.sundentalhospital.com/">
 
 <title>선치과병원 - 의료진소개</title>
 <script src="https://www.sundentalhospital.com/js/jquery.min.js" type="text/javascript"></script>
 <script src="https://www.sundentalhospital.com/js/jquery.easing.1.3.js" type="text/javascript"></script>
 <script src="https://www.sundentalhospital.com/js/design.js" type="text/javascript"></script>
 <script type="text/javascript" src="https://www.sundentalhospital.com/js/placeholders.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
 
 <link type="text/css" rel="stylesheet" href="https://www.sundentalhospital.com/css/import.css"/>
 
@@ -27,6 +31,13 @@
 
 <style>
 /* ===== RESPONSIVE OVERRIDES ===== */
+
+/* Font CORS fallback: use Google Fonts Nanum Gothic as fallback */
+body, #wrap, .gnb, .gnb a, #lnb, .ctab, .ctab a,
+.doctor, .doctor .txt, .footer, .f_menu, .f_add,
+.title_bar, #content, .login_area, .login_area a {
+  font-family: 'NanumGothic', 'Nanum Gothic', 'Malgun Gothic', '맑은 고딕', sans-serif !important;
+}
 
 /* Base: make all fixed-width containers fluid */
 #wrap {
@@ -134,7 +145,7 @@ img {
 
   #lnb .submenu li {
     width: 80px !important;
-    font-size: 11px !important;
+    font-size: 12px !important;
   }
 
   #lnb .submenu li .icon {
@@ -163,14 +174,14 @@ img {
   }
 
   #header .login_area {
-    font-size: 10px !important;
+    font-size: 12px !important;
     height: auto !important;
     line-height: 24px !important;
     padding: 2px 10px !important;
   }
 
   #header .login_area a {
-    font-size: 10px !important;
+    font-size: 12px !important;
     padding: 0 5px !important;
   }
 
@@ -226,7 +237,7 @@ img {
 
   #lnb .submenu li {
     width: 70px !important;
-    font-size: 10px !important;
+    font-size: 12px !important;
     margin-bottom: 8px !important;
   }
 
@@ -321,7 +332,7 @@ img {
   .f_menu .fm_ul li {
     float: none !important;
     line-height: 30px !important;
-    font-size: 11px !important;
+    font-size: 12px !important;
   }
 
   .f_menu .familySite {
@@ -342,7 +353,7 @@ img {
 
   .footer .f_add {
     padding-left: 0 !important;
-    font-size: 11px !important;
+    font-size: 12px !important;
     line-height: 18px !important;
   }
 
@@ -380,7 +391,7 @@ img {
 
   #lnb .submenu li {
     width: 60px !important;
-    font-size: 9px !important;
+    font-size: 12px !important;
   }
 
   #lnb .submenu li .icon {
@@ -394,7 +405,7 @@ img {
 
   .ctab li a,
   .ctab.ten li a {
-    font-size: 11px !important;
+    font-size: 12px !important;
     line-height: 34px !important;
     height: 34px !important;
   }
@@ -406,6 +417,18 @@ img {
   .doctor > ul > li .txt strong {
     font-size: 16px !important;
   }
+}
+
+/* ===== MINIMUM FONT SIZE GUARD FOR MOBILE ===== */
+@media screen and (max-width: 480px) {
+  * {
+    font-size: max(12px, inherit);
+  }
+  /* Re-apply specific larger sizes that inherit rule may affect */
+  .title_bar h2 { font-size: 18px !important; }
+  .doctor > ul > li .txt strong { font-size: 16px !important; }
+  .doctor > ul > li .txt em { font-size: 12px !important; }
+  .gnb ul li a { font-size: 12px !important; }
 }
 </style>
 
@@ -675,9 +698,9 @@ img {
       <li><a onfocus="this.blur();" onclick="javascript:window.open('https://www.sundentalhospital.com/etc/agree_service.php', 'service','left=100,top=100,width=1000,height=490,statusbar=no,scrollbars=no,toolbar=no,resizable=no')" href="#url">이용약관</a></li>
       <li><a onfocus="this.blur();" onclick="javascript:window.open('https://www.sundentalhospital.com/etc/suga2.php?type=1', 'suga','left=0,top=0,width=1000,height=640,statusbar=no,scrollbars=no,toolbar=no,resizable=no')" href="#url">비급여수가</a></li>
       <li><a onfocus="this.blur();" onclick="javascript:window.open('https://www.sundentalhospital.com/etc/certi.php', 'certi','left=0,top=0,width=1000,height=640,statusbar=no,scrollbars=yes,toolbar=no,resizable=no')" href="#url">증명서발급(제증명)</a></li>
-      <li><a href="http://www.sunhospital.com/" target="_blank">대전선병원</a></li>
-      <li><a href="http://yuseongsunhospital.com/" target="_blank">유성선병원</a></li>
-      <li><a href="http://www.sunmediscreen.co.kr/" target="_blank">국제검진센터</a></li>
+      <li><a href="https://www.sunhospital.com/" target="_blank">대전선병원</a></li>
+      <li><a href="https://yuseongsunhospital.com/" target="_blank">유성선병원</a></li>
+      <li><a href="https://www.sunmediscreen.co.kr/" target="_blank">국제검진센터</a></li>
       <li class="point"><a href="https://www.yuseongsunhospital.com/depart_main.html?cid=39" target="_blank">유성선병원 치과</a></li>
       <li class="point"><a href="https://www.sunhospital.com/guidance/info02_01_19.asp">대전선병원 구강외과</a></li>
     </ul>
@@ -686,8 +709,8 @@ img {
         <ul>
           <li><a href="https://www.sunhospital.com/" target="_blank">대전선병원</a></li>
           <li><a href="https://yuseongsunhospital.com/" target="_blank">유성선병원</a></li>
-          <li><a href="http://www.sunmediscreen.co.kr/" target="_blank">국제검진센터</a></li>
-          <li><a href="http://yuseong.sundentalhospital.co.kr/" target="_blank">유성선치과</a></li>
+          <li><a href="https://www.sunmediscreen.co.kr/" target="_blank">국제검진센터</a></li>
+          <li><a href="https://yuseong.sundentalhospital.co.kr/" target="_blank">유성선치과</a></li>
           <li><a href="https://www.sunhospital.com/guidance/info02_01_19.asp" target="_blank">대전선병원 구강외과</a></li>
         </ul>
       </div>
@@ -700,7 +723,7 @@ img {
         진료예약 및 상담 : 1588-7011<br />
       대전광역시 중구 중촌동 394-1 (새주소 : 대전광역시 중구 대종로 645)<br>사업자등록번호 : 305-82-14725   |   대표자 : 선두훈 <span class="copyright">copyrigth (c) 2015 sundental. all right reserved.</span></p>
      <ul class="f_sns">
-      <li><a href="http://cafe.naver.com/sunhandental" target="_blank"><img src="https://www.sundentalhospital.com/img/common/ncafe.gif" alt="cafe" /></a></li>
+      <li><a href="https://cafe.naver.com/sunhandental" target="_blank"><img src="https://www.sundentalhospital.com/img/common/ncafe.gif" alt="cafe" /></a></li>
       <li><a href="https://blog.naver.com/sundental1997/223155103113" target="_blank"><img src="https://www.sundentalhospital.com/img/common/blog.gif" alt="blog" /></a></li>
       <li><a href="https://www.instagram.com/sun_dental_hospital/" target="_blank"><img src="https://www.sundentalhospital.com/img/common/insta.gif" alt="instagram" /></a></li>
      </ul>
